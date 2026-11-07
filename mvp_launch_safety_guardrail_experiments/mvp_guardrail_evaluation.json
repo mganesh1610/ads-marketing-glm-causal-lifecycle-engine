@@ -1,0 +1,75 @@
+{
+  "module": "MVP Feature Launch Experimentation, Sequential Guardrail Gating & Sparse-Data Proxy Engine",
+  "combined_verified_records": 109211,
+  "sequential_ramp_checkpoints": [
+    {
+      "traffic_ramp_pct": 25,
+      "treated_n": 10673,
+      "control_n": 5326,
+      "conversion_z_stat": 3.45,
+      "conversion_msprt_p_valid": 0.03709100102466077,
+      "visit_z_stat": 10.96,
+      "visit_msprt_p_valid": 2.2602372565088072e-24,
+      "scale_up_approved": true
+    },
+    {
+      "traffic_ramp_pct": 50,
+      "treated_n": 21347,
+      "control_n": 10653,
+      "conversion_z_stat": 4.88,
+      "conversion_msprt_p_valid": 0.00013477199072829208,
+      "visit_z_stat": 15.5,
+      "visit_msprt_p_valid": 4.544127593041175e-26,
+      "scale_up_approved": true
+    },
+    {
+      "traffic_ramp_pct": 75,
+      "treated_n": 32020,
+      "control_n": 15979,
+      "conversion_z_stat": 5.98,
+      "conversion_msprt_p_valid": 4.247740917931828e-07,
+      "visit_z_stat": 18.98,
+      "visit_msprt_p_valid": 5.530779811264464e-26,
+      "scale_up_approved": true
+    },
+    {
+      "traffic_ramp_pct": 100,
+      "treated_n": 42694,
+      "control_n": 21306,
+      "conversion_z_stat": 6.91,
+      "conversion_msprt_p_valid": 1.2614457751387274e-09,
+      "visit_z_stat": 21.92,
+      "visit_msprt_p_valid": 6.366429639625664e-26,
+      "scale_up_approved": true
+    }
+  ],
+  "sparse_data_proxy_construction": {
+    "combined_source_records": 109211,
+    "stratified_proxy_sample_n": 4000,
+    "neyman_variance_reduction_pct": 66.98,
+    "hurdle_glm_roc_auc": 0.8862,
+    "qualitative_rubric_dimensions": [
+      "Creator_Brand_Suitability_Tier",
+      "User_Complaint_Sentiment_Polarity",
+      "Frequency_Fatigue_Overexposure_Risk",
+      "Landing_Flow_Policy_Compliance"
+    ],
+    "cold_start_coverage_rate_pct": 100.0
+  },
+  "automated_mvp_guardrail_gates": {
+    "gate_01_sha256_provenance_verified": true,
+    "gate_02_pre_treatment_smd_balance_le_0_01": true,
+    "gate_03_srm_sample_ratio_mismatch_passed": true,
+    "gate_04_visit_lift_statistically_significant": true,
+    "gate_05_conversion_lift_statistically_significant": true,
+    "gate_06_msprt_sequential_always_valid_p_lt_0_01": true,
+    "gate_07_doubly_robust_aipw_positive_ate": true,
+    "gate_08_hurdle_glm_roc_auc_ge_0_88": true,
+    "gate_09_neyman_stratified_variance_reduction_ge_65pct": true,
+    "gate_10_kmeans_segmentation_ss_ratio_ge_0_40": true,
+    "gate_11_sparse_data_proxy_coverage_100pct": true,
+    "gate_12_sqlite_warehouse_integrity_ok": true
+  },
+  "gates_passed": 12,
+  "gates_total": 12
+}

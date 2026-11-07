@@ -1,0 +1,8 @@
+test_combined_records_and_gates_pass (test_mvp_safety_guardrail.TestMvpSafetyGuardrailEngine.test_combined_records_and_gates_pass) ... ok
+test_sequential_ramp_checkpoints (test_mvp_safety_guardrail.TestMvpSafetyGuardrailEngine.test_sequential_ramp_checkpoints) ... ok
+test_sparse_data_proxy_construction (test_mvp_safety_guardrail.TestMvpSafetyGuardrailEngine.test_sparse_data_proxy_construction) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
