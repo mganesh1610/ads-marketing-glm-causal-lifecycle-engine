@@ -1,0 +1,5 @@
+lifecycle_stage,total_records,treated_records,control_records,engagement_rate_pct,conversion_rate_pct,total_revenue_usd
+Acquisition,36868,23938,12930,36.886,6.765,316105.3
+Onboarding,32230,21515,10715,26.478,3.556,162809.24
+Retention,30792,22167,8625,22.503,3.907,155472.77
+Growth,9321,7265,2056,32.25,10.986,141642.65

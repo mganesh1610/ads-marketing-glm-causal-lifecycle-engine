@@ -1,0 +1,96 @@
+{
+  "project": "Ads Marketing Lifecycle GLM, Multivariate & Causal Incrementality Engine",
+  "datasets": {
+    "hillstrom_rows": 64000,
+    "hillstrom_sha256": "0e5893329d8b93cefecc571777672028290ab69865718020c78c7284f291aece",
+    "uci_bank_rows": 45211,
+    "uci_bank_sha256": "e0bf5f5de5b846e2f18e9d90606637267d46dfa260e0f17bb12e605db5efbeb4",
+    "combined_verified_records": 109211
+  },
+  "sqlite_integrity": "ok",
+  "glm_hurdle_modeling": {
+    "binomial_logit_roc_auc": 0.8862,
+    "positive_spend_records": 5867,
+    "mean_hurdle_expected_revenue_usd": 6.8705
+  },
+  "multivariate_and_segmentation": {
+    "pca_top2_variance_explained": 0.4817,
+    "pca_top3_variance_explained": 0.6717,
+    "kmeans_between_ss_ratio": 0.4408,
+    "cluster_sizes": {
+      "segment_1": 20096,
+      "segment_2": 25778,
+      "segment_3": 32878,
+      "segment_4": 30459
+    }
+  },
+  "stratified_sampling": {
+    "total_sample_n": 4000,
+    "srs_estimator_se": 5.034195,
+    "neyman_estimator_se": 2.892586,
+    "variance_reduction_pct": 66.98,
+    "strata_allocations": {
+      "Retention_CoreTier": 115,
+      "Onboarding_CoreTier": 77,
+      "Acquisition_CoreTier": 109,
+      "Acquisition_HighTier": 1626,
+      "Onboarding_HighTier": 1164,
+      "Growth_HighTier": 478,
+      "Retention_HighTier": 406,
+      "Growth_CoreTier": 24
+    }
+  },
+  "causal_incrementality_64k_experiment": {
+    "treated_n": 42694,
+    "control_n": 21306,
+    "pre_treatment_smd_history": 0.00706,
+    "pre_treatment_smd_recency": 0.006,
+    "control_visit_rate_pct": 10.6167,
+    "treated_visit_rate_pct": 16.7049,
+    "relative_visit_lift_pct": 57.35,
+    "control_conversion_rate_pct": 0.5726,
+    "treated_conversion_rate_pct": 1.0681,
+    "relative_conversion_lift_pct": 86.53,
+    "doubly_robust_aipw_ate_pp": 0.4954,
+    "doubly_robust_aipw_se_pp": 0.0716,
+    "relative_spend_lift_pct": 91.42
+  },
+  "lifecycle_stages": [
+    {
+      "stage": "Acquisition",
+      "total_records": 36868,
+      "treated_records": 23938,
+      "control_records": 12930,
+      "engagement_rate_pct": 36.886,
+      "conversion_rate_pct": 6.765,
+      "total_revenue_usd": 316105.3
+    },
+    {
+      "stage": "Onboarding",
+      "total_records": 32230,
+      "treated_records": 21515,
+      "control_records": 10715,
+      "engagement_rate_pct": 26.478,
+      "conversion_rate_pct": 3.556,
+      "total_revenue_usd": 162809.24
+    },
+    {
+      "stage": "Retention",
+      "total_records": 30792,
+      "treated_records": 22167,
+      "control_records": 8625,
+      "engagement_rate_pct": 22.503,
+      "conversion_rate_pct": 3.907,
+      "total_revenue_usd": 155472.77
+    },
+    {
+      "stage": "Growth",
+      "total_records": 9321,
+      "treated_records": 7265,
+      "control_records": 2056,
+      "engagement_rate_pct": 32.25,
+      "conversion_rate_pct": 10.986,
+      "total_revenue_usd": 141642.65
+    }
+  ]
+}
