@@ -1,0 +1,188 @@
+{
+  "module": "consumer_segmentation_raking_driver_panel",
+  "primary_dataset_rows": 64000,
+  "primary_dataset_sha256": "0e5893329d8b93cefecc571777672028290ab69865718020c78c7284f291aece",
+  "ipf_rim_weighting": {
+    "n_panelists": 64000,
+    "weight_sum": 64000.0,
+    "min_weight": 0.5589,
+    "max_weight": 1.8344,
+    "kish_effective_sample_size": 56356.9,
+    "design_effect_deff": 1.1356,
+    "weighting_efficiency_pct": 88.06,
+    "max_marginal_convergence_drift": 0.0,
+    "post_raked_geography_shares": {
+      "Surburban": 0.5,
+      "Urban": 0.35,
+      "Rural": 0.15
+    },
+    "post_raked_channel_shares": {
+      "Web": 0.52,
+      "Phone": 0.28,
+      "Multichannel": 0.2
+    }
+  },
+  "segmentation_summary": {
+    "k_segments": 5,
+    "feature_space_variance_explained_pct": 64.68,
+    "prior_spend_anova_f_stat": 5982.68
+  },
+  "consumer_personas": [
+    {
+      "cluster_id": 2,
+      "consumer_count": 6448,
+      "weighted_share_pct": 11.47,
+      "mean_recency_months": 4.76,
+      "mean_prior_spend_usd": 529.65,
+      "dual_category_rate_pct": 100.0,
+      "new_to_brand_rate_pct": 60.65,
+      "stimuli_treatment_cvr_pct": 1.979,
+      "control_cvr_pct": 0.917,
+      "incremental_cvr_lift_pp": 1.063,
+      "persona_name": "Cross_Category_Brand_Champions"
+    },
+    {
+      "cluster_id": 1,
+      "consumer_count": 5768,
+      "weighted_share_pct": 14.88,
+      "mean_recency_months": 4.86,
+      "mean_prior_spend_usd": 492.16,
+      "dual_category_rate_pct": 0.0,
+      "new_to_brand_rate_pct": 56.38,
+      "stimuli_treatment_cvr_pct": 1.303,
+      "control_cvr_pct": 0.681,
+      "incremental_cvr_lift_pp": 0.622,
+      "persona_name": "Omnichannel_High_Value_Regulars"
+    },
+    {
+      "cluster_id": 4,
+      "consumer_count": 24981,
+      "weighted_share_pct": 35.44,
+      "mean_recency_months": 5.92,
+      "mean_prior_spend_usd": 202.46,
+      "dual_category_rate_pct": 0.0,
+      "new_to_brand_rate_pct": 100.0,
+      "stimuli_treatment_cvr_pct": 0.854,
+      "control_cvr_pct": 0.229,
+      "incremental_cvr_lift_pp": 0.625,
+      "persona_name": "Core_Category_Repeat_Shoppers"
+    },
+    {
+      "cluster_id": 3,
+      "consumer_count": 13518,
+      "weighted_share_pct": 19.23,
+      "mean_recency_months": 3.01,
+      "mean_prior_spend_usd": 176.39,
+      "dual_category_rate_pct": 0.0,
+      "new_to_brand_rate_pct": 0.0,
+      "stimuli_treatment_cvr_pct": 1.257,
+      "control_cvr_pct": 1.019,
+      "incremental_cvr_lift_pp": 0.238,
+      "persona_name": "New_To_Brand_Trial_Explorers"
+    },
+    {
+      "cluster_id": 0,
+      "consumer_count": 13285,
+      "weighted_share_pct": 18.98,
+      "mean_recency_months": 9.15,
+      "mean_prior_spend_usd": 135.31,
+      "dual_category_rate_pct": 0.0,
+      "new_to_brand_rate_pct": 0.0,
+      "stimuli_treatment_cvr_pct": 0.886,
+      "control_cvr_pct": 0.531,
+      "incremental_cvr_lift_pp": 0.355,
+      "persona_name": "Price_Conscious_Occasional_Buyers"
+    }
+  ],
+  "weighted_key_drivers": [
+    {
+      "driver": "Dual_Category_Breadth",
+      "weighted_standardized_beta": 0.0895,
+      "weighted_correlation_r": 0.0992,
+      "relative_driver_importance_pct": 31.02
+    },
+    {
+      "driver": "Product_Stimuli_Exposure",
+      "weighted_standardized_beta": 0.0805,
+      "weighted_correlation_r": 0.0802,
+      "relative_driver_importance_pct": 22.57
+    },
+    {
+      "driver": "Brand_Tenure_Maturity",
+      "weighted_standardized_beta": 0.0848,
+      "weighted_correlation_r": 0.0695,
+      "relative_driver_importance_pct": 20.6
+    },
+    {
+      "driver": "Purchase_Recency_Inverse",
+      "weighted_standardized_beta": 0.0638,
+      "weighted_correlation_r": 0.0742,
+      "relative_driver_importance_pct": 16.55
+    },
+    {
+      "driver": "Prior_Category_Spend_Log",
+      "weighted_standardized_beta": 0.0355,
+      "weighted_correlation_r": 0.0662,
+      "relative_driver_importance_pct": 8.22
+    },
+    {
+      "driver": "Omnichannel_Shopper_Tier",
+      "weighted_standardized_beta": -0.0111,
+      "weighted_correlation_r": 0.027,
+      "relative_driver_importance_pct": 1.05
+    }
+  ],
+  "quality_gates_passed": "10/10",
+  "quality_gates": [
+    {
+      "gate_id": "M01_SHA256_HILLSTROM_64K",
+      "passed": true,
+      "detail": "rows=64000"
+    },
+    {
+      "gate_id": "M02_RIM_WEIGHT_SUM_CONSERVATION",
+      "passed": true,
+      "detail": "sum=64000.0"
+    },
+    {
+      "gate_id": "M03_IPF_MARGINAL_CONVERGENCE",
+      "passed": true,
+      "detail": "drift=0.0"
+    },
+    {
+      "gate_id": "M04_DESIGN_EFFECT_GUARDRAIL",
+      "passed": true,
+      "detail": "DEFF=1.1356"
+    },
+    {
+      "gate_id": "M05_KISH_EFFECTIVE_SAMPLE_SIZE",
+      "passed": true,
+      "detail": "n_eff=56356.9"
+    },
+    {
+      "gate_id": "M06_FIVE_NONEMPTY_PERSONAS",
+      "passed": true,
+      "detail": "min_n=5768"
+    },
+    {
+      "gate_id": "M07_PERSONA_SHARE_CONSERVATION",
+      "passed": true,
+      "detail": "sum=100.00%"
+    },
+    {
+      "gate_id": "M08_SEGMENT_VARIANCE_EXPLAINED",
+      "passed": true,
+      "detail": "var=64.68%"
+    },
+    {
+      "gate_id": "M09_ANOVA_SIGNIFICANT_SEPARATION",
+      "passed": true,
+      "detail": "F=5982.68"
+    },
+    {
+      "gate_id": "M10_DRIVER_IMPORTANCE_SUM",
+      "passed": true,
+      "detail": "sum=100.01%"
+    }
+  ]
+}

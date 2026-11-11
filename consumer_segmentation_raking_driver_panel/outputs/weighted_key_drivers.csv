@@ -1,0 +1,7 @@
+driver,weighted_standardized_beta,weighted_correlation_r,relative_driver_importance_pct
+Dual_Category_Breadth,0.0895,0.0992,31.02
+Product_Stimuli_Exposure,0.0805,0.0802,22.57
+Brand_Tenure_Maturity,0.0848,0.0695,20.6
+Purchase_Recency_Inverse,0.0638,0.0742,16.55
+Prior_Category_Spend_Log,0.0355,0.0662,8.22
+Omnichannel_Shopper_Tier,-0.0111,0.027,1.05

@@ -1,0 +1,6 @@
+cluster_id,consumer_count,weighted_share_pct,mean_recency_months,mean_prior_spend_usd,dual_category_rate_pct,new_to_brand_rate_pct,stimuli_treatment_cvr_pct,control_cvr_pct,incremental_cvr_lift_pp,persona_name
+2,6448,11.47,4.76,529.65,100.0,60.65,1.979,0.917,1.063,Cross_Category_Brand_Champions
+1,5768,14.88,4.86,492.16,0.0,56.38,1.303,0.681,0.622,Omnichannel_High_Value_Regulars
+4,24981,35.44,5.92,202.46,0.0,100.0,0.854,0.229,0.625,Core_Category_Repeat_Shoppers
+3,13518,19.23,3.01,176.39,0.0,0.0,1.257,1.019,0.238,New_To_Brand_Trial_Explorers
+0,13285,18.98,9.15,135.31,0.0,0.0,0.886,0.531,0.355,Price_Conscious_Occasional_Buyers
